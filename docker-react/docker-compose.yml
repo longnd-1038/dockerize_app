@@ -1,0 +1,8 @@
+version: "3.4"
+
+services:
+  app:
+    image: reactjs
+    ports:
+      - "5001:80"
+    restart: unless-stopped

@@ -1,0 +1,8 @@
+version: "3.6"
+
+services:
+  app:
+    image: learn-docker/flask:v1
+    ports:
+      - "5000:5000"
+    restart: unless-stopped

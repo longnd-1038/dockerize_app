@@ -1,0 +1,10 @@
+version: "3.4"
+
+services:
+  app:
+    image: vuejs
+    ports:
+      - "5000:80"
+    restart: unless-stopped
+
+# docker run --rm -v $(pwd):/app -w /app node:13-alpine npm install && npm run build
